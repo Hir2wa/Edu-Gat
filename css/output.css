@@ -533,6 +533,9 @@
   .z-10 {
     z-index: 10;
   }
+  .m-2 {
+    margin: calc(var(--spacing) * 2);
+  }
   .m-3 {
     margin: calc(var(--spacing) * 3);
   }
@@ -557,6 +560,12 @@
   .table {
     display: table;
   }
+  .h-\[50px\] {
+    height: 50px;
+  }
+  .h-\[100px\] {
+    height: 100px;
+  }
   .w-56 {
     width: calc(var(--spacing) * 56);
   }
@@ -571,6 +580,9 @@
   }
   .resize {
     resize: both;
+  }
+  .items-center {
+    align-items: center;
   }
   .justify-between {
     justify-content: space-between;
@@ -598,6 +610,9 @@
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
+  .border-b-white {
+    border-bottom-color: var(--color-white);
+  }
   .bg-\[rgb\(1\,31\,91\)\] {
     background-color: rgb(1,31,91);
   }
@@ -613,11 +628,17 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\'img\/bird\.avif\'\)\] {
+    background-image: url('img/bird.avif');
+  }
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-11 {
+    padding-inline: calc(var(--spacing) * 11);
   }
   .px-28 {
     padding-inline: calc(var(--spacing) * 28);
@@ -627,6 +648,9 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
   }
   .py-11 {
     padding-block: calc(var(--spacing) * 11);
