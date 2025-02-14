@@ -536,6 +536,9 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
+  .top-1 {
+    top: calc(var(--spacing) * 1);
+  }
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
@@ -767,6 +770,9 @@
   .h-\[3px\] {
     height: 3px;
   }
+  .h-\[500px\] {
+    height: 500px;
+  }
   .h-\[50px\] {
     height: 50px;
   }
@@ -781,9 +787,6 @@
   }
   .h-\[150px\] {
     height: 150px;
-  }
-  .h-\[500px\] {
-    height: 500px;
   }
   .h-\[700px\] {
     height: 700px;
@@ -1173,12 +1176,6 @@
   .bg-\[\#2F4673\] {
     background-color: #2F4673;
   }
-  .bg-\[\#990001\] {
-    background-color: #990001;
-  }
-  .bg-\[\#9BA5BE\] {
-    background-color: #9BA5BE;
-  }
   .bg-\[\#011F5A\] {
     background-color: #011F5A;
   }
@@ -1190,6 +1187,12 @@
   }
   .bg-\[\#354B7C\] {
     background-color: #354B7C;
+  }
+  .bg-\[\#990001\] {
+    background-color: #990001;
+  }
+  .bg-\[\#9BA5BE\] {
+    background-color: #9BA5BE;
   }
   .bg-\[\#F2F2F2\] {
     background-color: #F2F2F2;
@@ -1266,6 +1269,12 @@
   }
   .bg-\[url\(\'\.\.\/assets\/bird\.jpeg\'\)\] {
     background-image: url('../assets/bird.jpeg');
+  }
+  .bg-\[url\(\'\.\.\/assets\/blue-pattern-bg\.jpeg\'\)\] {
+    background-image: url('../assets/blue-pattern-bg.jpeg');
+  }
+  .bg-\[url\(\'\.\.\/assets\/blue\.png\'\)\] {
+    background-image: url('../assets/blue.png');
   }
   .bg-\[url\(\'\.\/assets\/bird\.jpeg\'\)\] {
     background-image: url('./assets/bird.jpeg');
