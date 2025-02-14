@@ -28,19 +28,24 @@
       </div>
     </header>
 
-    <main class="bg-[url(../assets/bird.jpeg)]">
+    <main class="relative h-screen">
+      <!-- Background Image Wrapper -->
       <div
-        class="justify-between items-center p-6 text-white border-b border-slate-100"
-      >
-        <div class="hidden lg:flex gap-10 justify-between">
-          `
+        class="absolute inset-0 bg-[url('../assets/bird.jpeg')] bg-cover bg-center brightness-50"
+      ></div>
+
+      <!-- Content -->
+      <div class="relative z-10">
+        <div
+          class="flex justify-between items-center p-6 text-white border-b border-slate-100"
+        >
           <img
             src="https://www.upenn.edu/themes/custom/penn_starter/assets/img/UPenn-logo.svg"
             alt=""
             class="h-[150px] w-[150px]"
           />
-          <div class="flex justify-between gap-6 items-center">
-            <div class="">
+          <div class="flex gap-6">
+            <div>
               <i class="fa-solid fa-magnifying-glass fa-2x"></i>
             </div>
             <div class="flex gap-3 items-center">
@@ -50,57 +55,45 @@
             <button class="px-4 py-3 bg-[rgb(153,0,0)]">GIVE TO PENN</button>
           </div>
         </div>
-        <div class="lg:hidden justify-between flex items-center">
-          <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-          <div class="">
-            <img
-              src="https://www.upenn.edu/themes/custom/penn_starter/assets/img/UPenn-logo.svg"
-              alt=""
-              class="h-[150px] w-[150px]"
-            />
-          </div>
-          <div class="">
-            <i class="fa-solid fa-bars fa-2x"></i>
-          </div>
-        </div>
-      </div>
-      <ul
-        class="hidden lg:flex items-center gap-4 lg:text-base text-white font-bold justify-end mb-30"
-      >
-        <li>
-          <a href="">ACADEMICS</a>
-          <i class="fa-solid fa-angle-down"></i>
-        </li>
-        <li>
-          <a href="">/ ADMISSIONS & AID</a>
-        </li>
-        <li>
-          <a href="">/ ATHLETICS</a>
-        </li>
-        <li>
-          <a href="">/ RESEARCH & INNOVATION</a>
-          <i class="fa-solid fa-angle-down"></i>
-        </li>
-        <li>
-          <a href="">/ LIFE AT PENN</a>
-          <i class="fa-solid fa-angle-down"></i>
-        </li>
-        <li>
-          <a href="">/ ABOUT</a>
-          <i class="fa-solid fa-angle-down"></i>
-        </li>
-      </ul>
 
-      <div class="m-6 text-white py-25">
-        <h6 class="font-bold py-8">HEALTH SCIENCES</h6>
-        <p class="font-serif text-3xl font-semibold tracking-wider py-4">
-          How Penn is helping with bird flu research and disease surveillance
-        </p>
-        <p class="font-semibold lg:hidden">
-          Faculty are working on a nre vaccine for the H5N1 virus, studying its
-          transmission, and helping the state test samples from birds and
-          mammals
-        </p>
+        <ul
+          class="hidden lg:flex items-center gap-4 lg:text-base text-white font-bold justify-end mb-30"
+        >
+          <li>
+            <a href="">ACADEMICS</a>
+            <i class="fa-solid fa-angle-down"></i>
+          </li>
+          <li>
+            <a href="">/ ADMISSIONS & AID</a>
+          </li>
+          <li>
+            <a href="">/ ATHLETICS</a>
+          </li>
+          <li>
+            <a href="">/ RESEARCH & INNOVATION</a>
+            <i class="fa-solid fa-angle-down"></i>
+          </li>
+          <li>
+            <a href="">/ LIFE AT PENN</a>
+            <i class="fa-solid fa-angle-down"></i>
+          </li>
+          <li>
+            <a href="">/ ABOUT</a>
+            <i class="fa-solid fa-angle-down"></i>
+          </li>
+        </ul>
+
+        <div class="m-6 text-white py-25">
+          <h6 class="font-bold py-8">HEALTH SCIENCES</h6>
+          <p class="font-serif text-3xl font-semibold tracking-wider py-4">
+            How Penn is helping with bird flu research and disease surveillance
+          </p>
+          <p class="font-semibold lg:hidden">
+            Faculty are working on a new vaccine for the H5N1 virus, studying
+            its transmission, and helping the state test samples from birds and
+            mammals
+          </p>
+        </div>
       </div>
     </main>
 
@@ -146,7 +139,7 @@
             alt=""
           />
           <div class="p-6">
-            <p class="text-red-900 p-3 text-center hover:underline">
+            <p class="text-[#ffffff] p-3 text-center hover:underline">
               HEALTH SCIENCES
             </p>
             <p
@@ -233,82 +226,125 @@
         </div>
       </div>
     </div>
-    <section id="events">
-      <div class="max-w-6xl h-screen px-2 py-6 mt-8 space-y-8 mx-auto mb-24">
-        <div class="flex flex-col space-y-8">
-          <div class="text-5xl font-serif font-medium text-blue-950">
-            Upcoming Event
-            <div class="border-2 border-gray-500 w-12 mt-2"></div>
+
+    <div class="events p-8">
+      <h1 class="eb-garamond text-5xl font-light text-[#011F5B]">
+        Upcoming Events
+      </h1>
+      <div class="mt-4 h-[5px] w-[40px] bg-[#9BA5BE]"></div>
+
+      <div class="mt-12 flex w-full justify-between">
+        <div class="relative w-[30%]">
+          <div>
+            <img
+              src="https://penntoday.upenn.edu/sites/default/files/styles/event_large/public/2022-12/grad-center-locust-walk.jpg?h=56d0ca2e&itok=JXdJNEtf"
+              alt=""
+            />
           </div>
-        </div>
-        <div class="flex flex-row space-x-4 px-2 py-4">
-          <div class="flex flex-col space-y-2 px-4 py-4">
-            <div class="relative group overflow-hidden max-w-xs">
-              <img
-                src="https://penntoday.upenn.edu/sites/default/files/styles/event_large/public/2022-12/grad-center-locust-walk.jpg?h=56d0ca2e&itok=JXdJNEtf"
-                alt=""
-              />
-              <div class="absolute w-60 h-64 bg-white top-70 left-0 py-4"></div>
+
+          <div class="absolute top-[5%] left-[75%]">
+            <div
+              class="w-[50px] border-2 border-transparent bg-[#990001] text-center text-white"
+            >
+              FEB
             </div>
-            <p class="text-sm uppercase text-blue-950 font-semibold mt-0">
-              talks
-            </p>
-            <div class="border-2 border-gray-500 w-4"></div>
-            <h3 class="text-xl font-sm text-blue-950 mt-4">
+            <div
+              class="h-[50px] w-[50px] border-2 border-transparent bg-white text-center text-2xl shadow-2xl"
+            >
+              18
+            </div>
+          </div>
+          <div class="mt-4">
+            <h1
+              class="eb-garamond text-[22px] font-light text-[#011F5B] hover:underline"
+            >
               Managing Presentation Anxiety
-            </h3>
-            <p class="text-medium text-gray-500 max-w-sm">
+            </h1>
+            <p class="leading-7 font-light text-[#011F5B]">
               Communication Within the Curriculum Associate Director Sue Weber
               offers tips and tricks to control anxiety during public speaking.
-              A Penn graduate student ID is required
+              A Penn graduate student ID is required.
             </p>
-          </div>
-          <div class="border-1 border-gray-300"></div>
-          <div
-            class="flex flex-col space-y-2 px-4 py-4 bg-gradient-to-b from-gray-100 to-white"
-          >
-            <p class="text-sm uppercase text-blue-950 font-semibold mt-12">
-              special events
-            </p>
-            <div class="border-2 border-gray-400 w-8"></div>
-            <div class="space-y-2 mt-8">
-              <h3 class="text-xl font-sm text-blue-950 mt-4">
-                Historic Pennsylvania Hospital Tour
-              </h3>
-              <p class="text-medium text-gray-500 max-w-sm">
-                Holman Biotech Commons hosts a public tour of Pennsylvania
-                Hospital, the nation's first hospital. Attendees will tour the
-                Great Court, Historic Library, and Surgical Amphitheatre.
-                Registration is required.
-              </p>
-            </div>
-          </div>
-          <div class="border-1 border-gray-300"></div>
-          <div
-            class="flex flex-col space-y-2 px-4 py-4 bg-gradient-to-b from-gray-100 to-white"
-          >
-            <p class="text-sm uppercase text-blue-950 font-semibold mt-12">
-              special events
-            </p>
-            <div class="border-2 border-gray-400 w-8"></div>
-            <div class="space-y-2 mt-8">
-              <h3 class="text-xl font-sm text-blue-950 mt-4">
-                Historic Pennsylvania Hospital Tour
-              </h3>
-              <p class="text-medium text-gray-500 max-w-sm">
-                Holman Biotech Commons hosts a public tour of Pennsylvania
-                Hospital, the nation's first hospital. Attendees will tour the
-                Great Court, Historic Library, and Surgical Amphitheatre.
-                Registration is required.
-              </p>
-            </div>
           </div>
         </div>
-        <a href="#" class="text-sm font-semibold text-blue-950 hover:underline"
-          >MORE EVENTS VIA PENN TODAY</a
+
+        <div
+          class="h-[500px] w-[10px] border-r-1 border-gray-400 bg-gradient-to-b"
+        ></div>
+
+        <div class="flex w-[30%] gap-4">
+          <div class="relative border-2 border-transparent bg-[#F3F3F4] p-4">
+            <div class="mt-18">
+              <p class="text-sm">SPECIAL EVENTS</p>
+              <div class="mt-2 h-[5px] w-[20px] bg-[#9BA5BE]"></div>
+            </div>
+
+            <div class="absolute top-[5%] left-[76%]">
+              <div
+                class="w-[50px] border-2 border-transparent bg-[#990001] text-center text-white"
+              >
+                FEB
+              </div>
+              <div
+                class="h-[50px] w-[50px] border-2 border-transparent bg-white text-center text-2xl shadow-2xl"
+              >
+                19
+              </div>
+            </div>
+
+            <p
+              class="eb-garamond mt-6 text-2xl font-light text-[#011F5B] hover:underline"
+            >
+              Historic Pennsylvania Hospital Tour
+            </p>
+            <p class="mt-2 leading-7 font-light text-[#011F5B]">
+              Holman Biotech Commons hosts a public tour of Pennsylvania
+              Hospital, the nation's first hospital. Attendees will tour the
+              Great Court, Historic Library, and Surgical Amphitheatre.
+              Registration is required.
+            </p>
+          </div>
+          <div class="h-[500px] w-[10px] border-r-1 border-gray-400"></div>
+        </div>
+
+        <div
+          class="relative w-[30%] border-2 border-transparent bg-[#F3F3F4] p-4"
         >
+          <div class="mt-18">
+            <p class="text-sm">TALKS</p>
+            <div class="mt-2 h-[5px] w-[20px] bg-[#9BA5BE]"></div>
+          </div>
+
+          <div class="absolute top-[5%] left-[76%]">
+            <div
+              class="w-[50px] border-2 border-transparent bg-[#990001] text-center text-white"
+            >
+              FEB
+            </div>
+            <div
+              class="h-[50px] w-[50px] border-2 border-transparent bg-white text-center text-2xl shadow-2xl"
+            >
+              20
+            </div>
+          </div>
+
+          <p
+            class="eb-garamond mt-6 text-xl text-[22px] font-light text-[#011F5B] hover:underline"
+          >
+            Jesse Rothstein
+          </p>
+          <p class="mt-2 leading-7 font-light text-[#011F5B]">
+            Jesse Rothstein, a professor of public policy and economics at the
+            University of California, Berkeley, hosts a seminar about the role
+            of social safety net programs in college student success.
+          </p>
+        </div>
       </div>
-    </section>
+
+      <div class="moreevents mt-18 text-sm text-[#011F5B] uppercase">
+        <p>more events via penn today</p>
+      </div>
+    </div>
     <section>
       <div class="flex justify-center items-center min-h-screen">
         <div
