@@ -1118,6 +1118,12 @@
     --tw-tracking: var(--tracking-widest);
     letter-spacing: var(--tracking-widest);
   }
+  .text-\[rgb\(1\,31\,91\)\] {
+    color: rgb(1,31,91);
+  }
+  .text-\[rgb\(153\,0\,0\)\] {
+    color: rgb(153,0,0);
+  }
   .text-black {
     color: var(--color-black);
   }
