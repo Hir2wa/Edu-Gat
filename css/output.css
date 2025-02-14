@@ -631,6 +631,9 @@
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
+  .bg-red-800 {
+    background-color: var(--color-red-800);
+  }
   .bg-white {
     background-color: var(--color-white);
   }
