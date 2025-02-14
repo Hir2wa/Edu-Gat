@@ -29,12 +29,9 @@
     </header>
 
     <main class="relative h-screen">
-      <!-- Background Image Wrapper -->
       <div
         class="absolute inset-0 bg-[url('../assets/bird.jpeg')] bg-cover bg-center brightness-50"
       ></div>
-
-      <!-- Content -->
       <div class="relative z-10">
         <div
           class="flex justify-between items-center p-6 text-white border-b border-slate-100"
@@ -48,10 +45,39 @@
             <div>
               <i class="fa-solid fa-magnifying-glass fa-2x"></i>
             </div>
-            <div class="flex gap-3 items-center">
-              <p>RESOURCES</p>
-              <i class="fa-solid fa-angle-down"></i>
+            <div class="relative group">
+              <button class="px-4 py-2 text-white rounded-md">RESOURCES</button>
+              <ul
+                class="absolute left-0 mt-2 w-48 bg-white text-black shadow-lg rounded-lg overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200"
+              >
+                <li class="px-4 py-2 hover:bg-gray-200 cursor-pointer"></li>
+                <li class="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+                  Item 2
+                </li>
+                <li class="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+                  Item 3
+                </li>
+                <li class="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+                  Item 4
+                </li>
+                <li class="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+                  Item 5
+                </li>
+                <li class="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+                  Item 6
+                </li>
+                <li class="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+                  Item 7
+                </li>
+                <li class="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+                  Item 8
+                </li>
+                <li class="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+                  Item 9
+                </li>
+              </ul>
             </div>
+
             <button class="px-4 py-3 bg-[rgb(153,0,0)]">GIVE TO PENN</button>
           </div>
         </div>
@@ -97,9 +123,9 @@
       </div>
     </main>
 
-    <div class="flex justify-between p-6">
+    <div class="flex justify-between m-4">
       <p
-        class="font-extralight border-b-[5px] border-slate-600 text-rgb(rgb(1,31,91)) text-3xl"
+        class="font-[EB Garamond, serif] border-b-[5px] border-slate-600 text-rgb(rgb(1,31,91)) text-3xl"
       >
         News
       </p>
@@ -112,38 +138,39 @@
         />
       </div>
     </div>
-    <div class="grid grid-cols-2">
-      <div class="group">
+    <div class="flex gap-[2%] m-4">
+      <div class="w-[42%] hover:underline">
         <img
           src="https://penntoday.upenn.edu/sites/default/files/styles/hero/public/2025-02/pavilion-gift-teaser.jpg"
           alt=""
         />
-        <div class="p-6">
+        <div class="p-4">
           <p class="text-red-900 p-3 text-center hover:underline">
             HEALTH SCIENCES
           </p>
           <p
-            class="tracking-wider text-2xl font-serif text-[rgb(1,31,91)] group-hover:underline"
+            class="tracking-wider text-[25px] font-[EB Garamond, serif] text-[rgb(1,31,91)]"
           >
             Catherine and Anthony Clifton make transformational gift to
             accelerate patient care, research, and education at Penn Medicine
           </p>
+
           <div class="bg-gray-400 w-[15px] h-[5px] translate-x-50"></div>
         </div>
       </div>
 
-      <div class="grid grid-cols-2">
+      <div class="w-[51%] grid grid-cols-2 gap-2">
         <div class="group">
           <img
             src="https://penntoday.upenn.edu/sites/default/files/styles/teaser/public/2025-02/epstein-jon-teaser.jpg?h=56d0ca2e&itok=y-yTUcaz"
             alt=""
           />
-          <div class="p-6">
-            <p class="text-[#ffffff] p-3 text-center hover:underline">
-              HEALTH SCIENCES
+          <div class="p-2">
+            <p class="text-[rgb(153,0,0)] text-center hover:underline">
+              HEALTH SC IENCES
             </p>
             <p
-              class="tracking-wider font-serif text-blue-950 group-hover:underline"
+              class="tracking-wider font-serif text-[rgb(1,66,165)] group-hover:underline"
             >
               Jonathan A. Epstein named head of Perelman School of Medicine and
               Penn Health System
@@ -151,15 +178,15 @@
           </div>
         </div>
 
-        <div class="group">
+        <div class="">
           <img
             src="https://penntoday.upenn.edu/sites/default/files/styles/teaser/public/2025-02/america-250-teaser-social-main.jpg?h=56d0ca2e&itok=ZJqmd08g"
             alt=""
           />
-          <p class="text-red-900 p-3 text-center hover:underline">
+          <p class="text-[rgb(153,0,0)] pt-2 text-center hover:underline">
             ARTS, HUMANITIES, & SOCIAL SCIENCES
           </p>
-          <p class="group-hover:underline text-blue-950 font-serif">
+          <p class="group-hover:underline text-[rgb(1,66,165)] font-serif">
             Penn prepares to mark America's 250th birthday
           </p>
         </div>
@@ -169,12 +196,12 @@
               src="https://penntoday.upenn.edu/sites/default/files/styles/teaser/public/2025-02/preservation-campus-teaser.jpg?h=c1e51c98&itok=3ZcGgQfb"
               alt=""
             />
-            <div class="p-6">
-              <p class="text-red-900 p-3 text-center hover:underline">
+            <div class="p-2">
+              <p class="text-[rgb(153,0,0)] text-center hover:underline">
                 ARTS, HUMANITIES, & SOCIAL SCIENCES
               </p>
               <p
-                class="tracking-wider font-serif text-blue-950 group-hover:underline"
+                class="tracking-wider font-serif text-[rgb(1,66,165)] group-hover:underline"
               >
                 A rare on-campus assignment for preservation students hold
                 'small revelation'
@@ -188,10 +215,10 @@
             src="https://penntoday.upenn.edu/sites/default/files/styles/teaser/public/2025-02/chan-vanessa-teaser.jpg?h=10d202d3&itok=p7_scO6y"
             alt=""
           />
-          <p class="text-red-900 p-3 text-center hover:underline">
+          <p class="text-[rgb(153,0,0)] pt-2 text-center hover:underline">
             SCIENCES & TECHNOLOGY
           </p>
-          <p class="group-hover:underline text-blue-950 font-serif">
+          <p class="group-hover:underline text-[rgb(1,66,165)] font-serif">
             Vanessa Chan bridges the gap between innovation and the market
           </p>
         </div>
