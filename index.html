@@ -28,131 +28,337 @@
       </div>
     </header>
 
-    <section class="bg-[url('./assets/bird.jpeg')] text-white">
-      <nav>
-        <div
-          class="border- flex h-[100px] items-center justify-between border-b-white px-11 py-3"
-        >
-          <img src="" />
-          <di v class="flex items-center justify-between gap-11">
-            <p class="text-2xl">
-              <ion-icon name="search-outline"></ion-icon>
-            </p>
-
-            <div class="justify-bet flex items-center gap-1">
-              <p>Resources</p>
-              <ion-icon name="chevron-down-outline"></ion-icon>
+    <main class="bg-[url(../assets/bird.jpg)]">
+      <div
+        class="justify-between items-center p-6 text-white border-b border-slate-100"
+      >
+        <div class="hidden lg:flex gap-10 justify-between">
+          <img
+            src="https://www.upenn.edu/themes/custom/penn_starter/assets/img/UPenn-logo.svg"
+            alt=""
+            class="h-[150px] w-[150px]"
+          />
+          <div class="flex justify-between gap-6 items-center">
+            <div class="">
+              <i class="fa-solid fa-magnifying-glass fa-2x"></i>
             </div>
+            <div class="flex gap-3 items-center">
+              <p>RESOURCES</p>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <button class="px-4 py-3 bg-red-900">GIVE TO PENN</button>
+          </div>
+        </div>
+        <div class="lg:hidden justify-between flex items-center">
+          <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          <div class="">
+            <img
+              src="https://www.upenn.edu/themes/custom/penn_starter/assets/img/UPenn-logo.svg"
+              alt=""
+              class="h-[150px] w-[150px]"
+            />
+          </div>
+          <div class="">
+            <i class="fa-solid fa-bars fa-2x"></i>
+          </div>
+        </div>
+      </div>
+      <ul
+        class="hidden lg:flex items-center gap-4 lg:text-base text-white font-bold justify-end mb-30"
+      >
+        <li>
+          <a href="">ACADEMICS</a>
+          <i class="fa-solid fa-angle-down"></i>
+        </li>
+        <li>
+          <a href="">/ ADMISSIONS & AID</a>
+        </li>
+        <li>
+          <a href="">/ ATHLETICS</a>
+        </li>
+        <li>
+          <a href="">/ RESEARCH & INNOVATION</a>
+          <i class="fa-solid fa-angle-down"></i>
+        </li>
+        <li>
+          <a href="">/ LIFE AT PENN</a>
+          <i class="fa-solid fa-angle-down"></i>
+        </li>
+        <li>
+          <a href="">/ ABOUT</a>
+          <i class="fa-solid fa-angle-down"></i>
+        </li>
+      </ul>
 
-            <button class="bg-red-800 px-4 py-2 text-white">
-              GIVE TO PENN
-            </button>
-          </di>
-        </div>
-        <div class="flex justify-end gap-5 px-11">
-          <p>Academics</p>
-          <p>Admissions & Aid</p>
-          <p>Athletics</p>
-          <p>Research & Innovation</p>
-          <p>Life at Penn</p>
-          <p>About</p>
-        </div>
-      </nav>
-      <div class="mt-[100px]">
-        <h1>Health Sciences</h1>
-        <p>
+      <div class="m-6 text-white py-25">
+        <h6 class="font-bold py-8">HEALTH SCIENCES</h6>
+        <p class="font-serif text-3xl font-semibold tracking-wider py-4">
           How Penn is helping with bird flu research and disease surveillance
         </p>
+        <p class="font-semibold lg:hidden">
+          Faculty are working on a nre vaccine for the H5N1 virus, studying its
+          transmission, and helping the state test samples from birds and
+          mammals
+        </p>
       </div>
-    </section>
+    </main>
 
-    <section class="mt-[100px] px-7">
-      <div class="flex justify-between">
-        <h1 class="inline-block border-b-5 border-b-gray-600">News</h1>
-        <div class="flex gap-[100px] border-b border-gray-400">
-          <p>Topics</p>
-          <p>
-            <ion-icon name="caret-down-outline"></ion-icon>
+    <div class="flex justify-between p-6">
+      <p
+        class="font-extralight border-b-[5px] border-slate-600 text-blue-950 text-3xl"
+      >
+        News
+      </p>
+      <div class="flex justify-center items-center px-6">
+        <p class="text-base border-b border-blue-300 px-2">Topics</p>
+        <img
+          src="https://www.upenn.edu/themes/custom/penn_global/assets/img/svg/icon-down-triangle.svg"
+          alt=""
+          class="h-[5px] w-[5px]"
+        />
+      </div>
+    </div>
+    <div class="grid grid-cols-2">
+      <div class="group">
+        <img
+          src="https://penntoday.upenn.edu/sites/default/files/styles/hero/public/2025-02/pavilion-gift-teaser.jpg"
+          alt=""
+        />
+        <div class="p-6">
+          <p class="text-red-900 p-3 text-center hover:underline">
+            HEALTH SCIENCES
           </p>
-        </div>
-      </div>
-
-      <div class="mt-[50px] flex gap-20">
-        <div
-          class="flex w-[40%] flex-col space-y-3 border-x-1 border-gray-500 px-7 pb-3"
-        >
-          <img src="assets/pavilion-gift-teaser.jpeg" />
-          <h1 class="text-center text-red-600 hover:underline">
-            Health Sciences
-          </h1>
-          <p class="px-6 text-blue-600 hover:underline">
+          <p
+            class="tracking-wider text-2xl font-serif text-blue-950 group-hover:underline"
+          >
             Catherine and Anthony Clifton make transformational gift to
-            accelerate patient care, research, and educati on at Penn Medicine
+            accelerate patient care, research, and education at Penn Medicine
           </p>
-          <p class="flex w-[25px] self-center border-3 border-gray-500"></p>
-          <p class="mt-auto w-full self-center border border-gray-300"></p>
+          <div class="bg-gray-400 w-[15px] h-[5px] translate-x-50"></div>
         </div>
-        <div class="grid w-[60%] grid-cols-2">
-          <div
-            class="flex flex-col space-y-3 border-x-1 border-gray-500 px-7 pb-3"
-          >
-            <img src="img/many-peoples.jpg" />
-            <h1 class="text-center text-red-600 hover:underline">
-              Health Sciences
-            </h1>
-            <p class="px-6 text-blue-600 hover:underline">
-              Catherine and Anthony Clifton make transformational gift to
-              accelerate patient care, research, and educati on at Penn Medicine
-            </p>
-            <p class="flex w-[25px] self-center border-3 border-gray-500"></p>
-            <p class="mt-auto w-full self-center border border-gray-300"></p>
-          </div>
-          <div
-            class="flex flex-col space-y-3 border-x-1 border-gray-500 px-7 pb-3"
-          >
-            <img src="img/many-peoples.jpg" />
-            <h1 class="text-center text-red-600 hover:underline">
-              Health Sciences
-            </h1>
-            <p class="px-6 text-blue-600 hover:underline">
-              Catherine and Anthony Clifton make transformational gift to
-              accelerate patient care, research, and educati on at Penn Medicine
-            </p>
-            <p class="flex w-[25px] self-center border-3 border-gray-500"></p>
-            <p class="mt-auto w-full self-center border border-gray-300"></p>
-          </div>
-          <div
-            class="flex flex-col space-y-3 border-x-1 border-gray-500 px-7 pb-3"
-          >
-            <img src="img/many-peoples.jpg" />
-            <h1 class="text-center text-red-600 hover:underline">
-              Health Sciences
-            </h1>
+      </div>
 
-            <p class="px-6 text-blue-600 hover:underline">
-              Catherine and Anthony Clifton make transformational gift to
-              accelerate patient care, research, and educati on at Penn Medicine
+      <div class="grid grid-cols-2">
+        <div class="group">
+          <img
+            src="https://penntoday.upenn.edu/sites/default/files/styles/teaser/public/2025-02/epstein-jon-teaser.jpg?h=56d0ca2e&itok=y-yTUcaz"
+            alt=""
+          />
+          <div class="p-6">
+            <p class="text-red-900 p-3 text-center hover:underline">
+              HEALTH SCIENCES
             </p>
-            <p class="flex w-[25px] self-center border-3 border-gray-500"></p>
-            <p class="mt-auto w-full self-center border border-gray-300"></p>
+            <p
+              class="tracking-wider font-serif text-blue-950 group-hover:underline"
+            >
+              Jonathan A. Epstein named head of Perelman School of Medicine and
+              Penn Health System
+            </p>
           </div>
-          <div
-            class="flex flex-col space-y-3 border-x-1 border-gray-500 px-7 pb-3"
-          >
-            <img src="img/many-peoples.jpg" />
-            <h1 class="text-center text-red-600 hover:underline">
-              Health Sciences
-            </h1>
-            <p class="px-6 text-blue-600 hover:underline">
-              Catherine and Anthony Clifton make transformational gift to
-              accelerate patient care, research, and educati on at Penn Medicine
+        </div>
+
+        <div class="group">
+          <img
+            src="https://penntoday.upenn.edu/sites/default/files/styles/teaser/public/2025-02/america-250-teaser-social-main.jpg?h=56d0ca2e&itok=ZJqmd08g"
+            alt=""
+          />
+          <p class="text-red-900 p-3 text-center hover:underline">
+            ARTS, HUMANITIES, & SOCIAL SCIENCES
+          </p>
+          <p class="group-hover:underline text-blue-950 font-serif">
+            Penn prepares to mark America's 250th birthday
+          </p>
+        </div>
+        <div class="flex flex-row justify-between">
+          <div class="group">
+            <img
+              src="https://penntoday.upenn.edu/sites/default/files/styles/teaser/public/2025-02/preservation-campus-teaser.jpg?h=c1e51c98&itok=3ZcGgQfb"
+              alt=""
+            />
+            <div class="p-6">
+              <p class="text-red-900 p-3 text-center hover:underline">
+                ARTS, HUMANITIES, & SOCIAL SCIENCES
+              </p>
+              <p
+                class="tracking-wider font-serif text-blue-950 group-hover:underline"
+              >
+                A rare on-campus assignment for preservation students hold
+                'small revelation'
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group">
+          <img
+            src="https://penntoday.upenn.edu/sites/default/files/styles/teaser/public/2025-02/chan-vanessa-teaser.jpg?h=10d202d3&itok=p7_scO6y"
+            alt=""
+          />
+          <p class="text-red-900 p-3 text-center hover:underline">
+            SCIENCES & TECHNOLOGY
+          </p>
+          <p class="group-hover:underline text-blue-950 font-serif">
+            Vanessa Chan bridges the gap between innovation and the market
+          </p>
+        </div>
+        <p class="hover:underline text-red-900 text-sm text-end">
+          MORE NEWS VIA PENN TODAY
+        </p>
+      </div>
+    </div>
+    <div
+      class="p-60 relative bg-[url(https://www.upenn.edu/sites/default/files/styles/crop_2x1/public/2025-01/penn-center-innovation.jpg?h=92c5d8ae&itok=3O1cAYdA)]"
+    >
+      <div class="absolute left-4 bottom-2">
+        <div
+          class="bg-[url(https://www.upenn.edu/themes/custom/penn_global/assets/img/blue-pattern-bg.png)] w-[30rem] h-[25rem]"
+        >
+          <div class="border border-gray-200 text-white m-3 text-center p-10">
+            <p class="m-4 p-2 font-semibold lg:text-sm">CAMPUS & COMMUNITY</p>
+            <p class="font-serif tracking-widest font-semibold text-xl mb-6">
+              Penn Center for Innovation celebrates 10 years
             </p>
-            <p class="flex w-[25px] self-center border-3 border-gray-500"></p>
-            <p class="mt-auto w-full self-center border border-gray-300"></p>
+            <p>
+              The University's nexus for technology transfer supports researches
+              in their innovative efforts,from CAR T to mRNA advancements that
+              have dramatically reshaped the world.
+            </p>
+            <button
+              class="rounded-3xl hover:bg-white hover:text-red-900 p-3 mt-3"
+            >
+              LEARN MORE
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="events">
+      <div class="max-w-6xl h-screen px-2 py-6 mt-8 space-y-8 mx-auto mb-24">
+        <div class="flex flex-col space-y-8">
+          <div class="text-5xl font-serif font-medium text-blue-950">
+            Upcoming Event
+            <div class="border-2 border-gray-500 w-12 mt-2"></div>
+          </div>
+        </div>
+        <div class="flex flex-row space-x-4 px-2 py-4">
+          <div class="flex flex-col space-y-2 px-4 py-4">
+            <div class="relative group overflow-hidden max-w-xs">
+              <img
+                src="https://penntoday.upenn.edu/sites/default/files/styles/event_large/public/2022-12/grad-center-locust-walk.jpg?h=56d0ca2e&itok=JXdJNEtf"
+                alt=""
+              />
+              <div class="absolute w-60 h-64 bg-white top-70 left-0 py-4"></div>
+            </div>
+            <p class="text-sm uppercase text-blue-950 font-semibold mt-0">
+              talks
+            </p>
+            <div class="border-2 border-gray-500 w-4"></div>
+            <h3 class="text-xl font-sm text-blue-950 mt-4">
+              Managing Presentation Anxiety
+            </h3>
+            <p class="text-medium text-gray-500 max-w-sm">
+              Communication Within the Curriculum Associate Director Sue Weber
+              offers tips and tricks to control anxiety during public speaking.
+              A Penn graduate student ID is required
+            </p>
+          </div>
+          <div class="border-1 border-gray-300"></div>
+          <div
+            class="flex flex-col space-y-2 px-4 py-4 bg-gradient-to-b from-gray-100 to-white"
+          >
+            <p class="text-sm uppercase text-blue-950 font-semibold mt-12">
+              special events
+            </p>
+            <div class="border-2 border-gray-400 w-8"></div>
+            <div class="space-y-2 mt-8">
+              <h3 class="text-xl font-sm text-blue-950 mt-4">
+                Historic Pennsylvania Hospital Tour
+              </h3>
+              <p class="text-medium text-gray-500 max-w-sm">
+                Holman Biotech Commons hosts a public tour of Pennsylvania
+                Hospital, the nation's first hospital. Attendees will tour the
+                Great Court, Historic Library, and Surgical Amphitheatre.
+                Registration is required.
+              </p>
+            </div>
+          </div>
+          <div class="border-1 border-gray-300"></div>
+          <div
+            class="flex flex-col space-y-2 px-4 py-4 bg-gradient-to-b from-gray-100 to-white"
+          >
+            <p class="text-sm uppercase text-blue-950 font-semibold mt-12">
+              special events
+            </p>
+            <div class="border-2 border-gray-400 w-8"></div>
+            <div class="space-y-2 mt-8">
+              <h3 class="text-xl font-sm text-blue-950 mt-4">
+                Historic Pennsylvania Hospital Tour
+              </h3>
+              <p class="text-medium text-gray-500 max-w-sm">
+                Holman Biotech Commons hosts a public tour of Pennsylvania
+                Hospital, the nation's first hospital. Attendees will tour the
+                Great Court, Historic Library, and Surgical Amphitheatre.
+                Registration is required.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="text-sm font-semibold text-blue-950 hover:underline"
+          >MORE EVENTS VIA PENN TODAY</a
+        >
+      </div>
+    </section>
+    <section>
+      <div class="flex justify-center items-center min-h-screen">
+        <div
+          class="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-6"
+        >
+          <div class="border border-gray-200 p-2 rounded-sm">
+            <div
+              class="bg-[#F2F2F2] border border-gray-200 rounded shadow-sm p-12 flex flex-col items-center text-center"
+            >
+              <img
+                src="https://www.upenn.edu/sites/default/files/2021-07/Inspiring-Impact-Campaign-Logo.png"
+                alt="Inspiring Impact"
+                class="h-8 object-contain mb-2"
+              />
+              <div class="w-16 h-px bg-gray-300 my-8"></div>
+              <p class="text-gray-800 text-lg leading-relaxed max-w-md mb-10">
+                Your support ignites change locally and globally, transforming
+                Penn into a powerful engine that advances knowledge for
+                society's greatest good.
+              </p>
+              <button
+                class="bg-transparent border-2 border-gray-300 text-gray-800 px-8 py-3 rounded-full hover:bg-gray-50 transition font-medium text-sm tracking-wider"
+              >
+                SUPPORT PENN
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-[#011F5B] p-2">
+            <div
+              class="bg-[#011F5B] border border-gray-200 text-white p-12 flex flex-col items-center text-center"
+            >
+              <h2 class="text-3xl font-serif">Supporting Our Community</h2>
+              <div class="w-16 h-px bg-gray-300 my-8"></div>
+              <p class="text-lg leading-relaxed max-w-md mb-10">
+                During these challenging times, Penn remains committed to
+                supporting students, faculty, and staff and to sharing
+                information with our larger community of alumni, parents, and
+                friends.
+              </p>
+              <button
+                class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-blue-900 transition font-medium text-sm tracking-wider"
+              >
+                LEARN MORE
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
     <script src="./js/app.js"></script>
   </body>
 </html>
