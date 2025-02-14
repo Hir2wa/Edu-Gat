@@ -714,6 +714,24 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\'\'\)\] {
+    background-image: url('');
+  }
+  .bg-\[url\(\'\.\.\/\'\)\] {
+    background-image: url('../');
+  }
+  .bg-\[url\(\'\.\/assets\/bird\.jpeg\'\)\] {
+    background-image: url('./assets/bird.jpeg');
+  }
+  .bg-\[url\(\'assets\/bird\.avif\'\)\] {
+    background-image: url('assets/bird.avif');
+  }
+  .bg-\[url\(\'assets\/bird\.jpeg\'\)\] {
+    background-image: url('assets/bird.jpeg');
+  }
+  .bg-\[url\(\'https\:\/\/www\.upenn\.edu\/sites\/default\/files\/styles\/crop_5x3\/public\/2025-02\/avian-bird-flu\.jpg\?h\=d0d32c2c\&amp\;itok\=MaefnWJg\'\)\] {
+    background-image: url('https://www.upenn.edu/sites/default/files/styles/crop_5x3/public/2025-02/avian-bird-flu.jpg?h=d0d32c2c&amp;itok=MaefnWJg');
+  }
   .bg-\[url\(\'img\/bird\.avif\'\)\] {
     background-image: url('img/bird.avif');
   }
