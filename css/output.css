@@ -964,6 +964,9 @@
   .bg-\[url\(\.\.\/assets\/avian-bird-flu\.jpg\)\] {
     background-image: url(../assets/avian-bird-flu.jpg);
   }
+  .bg-\[url\(\.\.\/assets\/bird\.jpeg\)\] {
+    background-image: url(../assets/bird.jpeg);
+  }
   .bg-\[url\(\.\.\/assets\/bird\.jpg\)\] {
     background-image: url(../assets/bird.jpg);
   }
