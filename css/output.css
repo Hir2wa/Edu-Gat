@@ -542,6 +542,9 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
+  .mt-\[50px\] {
+    margin-top: 50px;
+  }
   .mt-\[100px\] {
     margin-top: 100px;
   }
@@ -575,6 +578,9 @@
   .w-56 {
     width: calc(var(--spacing) * 56);
   }
+  .w-\[40\%\] {
+    width: 40%;
+  }
   .w-full {
     width: 100%;
   }
@@ -586,6 +592,9 @@
   }
   .resize {
     resize: both;
+  }
+  .flex-col {
+    flex-direction: column;
   }
   .items-center {
     align-items: center;
@@ -608,6 +617,9 @@
   .gap-11 {
     gap: calc(var(--spacing) * 11);
   }
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
+  }
   .gap-\[100px\] {
     gap: 100px;
   }
@@ -618,12 +630,23 @@
       margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .space-y-3 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .rounded-md {
     border-radius: var(--radius-md);
   }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-x-1 {
+    border-inline-style: var(--tw-border-style);
+    border-inline-width: 1px;
   }
   .border-b {
     border-bottom-style: var(--tw-border-style);
@@ -641,6 +664,9 @@
   }
   .border-gray-400 {
     border-color: var(--color-gray-400);
+  }
+  .border-gray-500 {
+    border-color: var(--color-gray-500);
   }
   .border-b-gray-600 {
     border-bottom-color: var(--color-gray-600);
@@ -696,6 +722,12 @@
   .py-11 {
     padding-block: calc(var(--spacing) * 11);
   }
+  .pb-3 {
+    padding-bottom: calc(var(--spacing) * 3);
+  }
+  .text-center {
+    text-align: center;
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -718,6 +750,9 @@
   .text-gray-700 {
     color: var(--color-gray-700);
   }
+  .text-red-600 {
+    color: var(--color-red-600);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -736,6 +771,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-gray-100);
+      }
+    }
+  }
+  .hover\:underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline;
       }
     }
   }
